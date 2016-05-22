@@ -33,6 +33,31 @@ Type the following command and press Enter.
 7. Install packages for front-end
 
   bower i
+  
+8. Configure database
 
-
-
+  import database 
+    
+    run mongo service (not close this service):
+      - mongod
+    run mongo client (in another terminal):
+      - mongo
+    import database  :
+      - mongoimport --db mongodb  --file mongodb.json 
+    check collection :
+      - mongo
+      - use mongodb         (use collection [name])
+      - db.mongodb.find()   (must show all imported collections)
+      
+  export database (for example backup)
+      
+    run mongo service (not close this service):
+    - mongod
+    run mongo client (in another terminal):
+    - mongo 
+    show list of databases
+    - show dbs 
+    quit to bash
+    - press ctrl+C
+    export to file system
+    - mongoexport --db databaseName --collection collectionNaame --out fileName.json

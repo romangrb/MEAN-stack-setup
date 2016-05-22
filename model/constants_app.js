@@ -1,6 +1,6 @@
 module.exports = Object.freeze({
  
-  SCHEMA_NAME : 'Blobs',
-  COLLECTION_NAME : 'Blob',
-
+  SCHEMA_NAME : 'schema',
+  COLLECTION_NAME : 'collection',
+  
 });
