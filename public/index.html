@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html ng-app="ngApp">
+	
+	<head>
+		
+		<base href="/">
+		
+		<meta charset="UTF-8">
+	
+		<title>Welcome to MEAN stack</title>
+	
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="vendor/bower_components/Materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+		<!-- CSS  custom styles after style liberies -->
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<!-- JS -->
+		<script src="vendor/bower_components/angular/angular.min.js"></script>
+		<script src="vendor/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="vendor/bower_components/angular-animate/angular-animate.min.js"></script>
+
+	 	<!--Import jQuery before materialize.js-->
+	  <script type="text/javascript" src="vendor/bower_components/jquery/dist/jquery.min.js"></script>
+	  <script type="text/javascript" src="vendor/bower_components/Materialize/dist/js/materialize.min.js"></script>
+	
+	</head>
+	
+	<body>
+	  <section>
+			  <!-- ANGULAR DYNAMIC CONTENT -->
+				<h3 ng-view></h3>
+  	</section>
+  
+		<!-- ANGULAR CUSTOM -->
+		<!-- Angular main app module -->
+	  <script src="js/ng_app.js"></script>
+		<!-- services -->
+		<script src="js/services/ng_service.js"></script>
+		<script src="js/services/constant_service.js"></script>
+		<!-- models -->
+		<!-- controllers -->
+		<script src="js/controllers/ng_ctrl.js"></script>
+	
+	</body>
+	
+</html>

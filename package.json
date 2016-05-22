@@ -1,0 +1,14 @@
+{
+  "name": "MEAN-Stack",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bower": "^1.7.9",
+    "express": "^4.11.2",
+    "mongoose": "^4.4.17",
+    "path": "^0.12.7"
+  }
+}
