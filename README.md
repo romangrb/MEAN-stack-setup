@@ -61,3 +61,7 @@ Type the following command and press Enter.
     - press ctrl+C
     export to file system
     - mongoexport --db databaseName --collection collectionNaame --out fileName.json
+    
+  npm install -g browserify
+  npm install babelify
+  browserify -d -e app.js -o bundle.js -t [ babelify --modules common]`
