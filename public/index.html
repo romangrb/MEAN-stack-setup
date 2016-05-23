@@ -34,6 +34,20 @@
 	</head>
 	
 	<body>
+		<noscript>
+	    <div class="u-padding-Am deprecation-warning">
+		      <h1> Please enable Javascript </h1>
+		      <p>GoCardless requires your browser to have Javascript enabled.
+		      <a href="http://enable-javascript.com" target="_blank">Learn more</a></p>
+	    </div>
+    </noscript>
+    
+    <script src="/loader.config.js"></script>
+	  <script>
+	    System.baseURL = '/';
+	    System.import('app/bootstrap');
+	  </script>
+    
 	  <section>
 			  <!-- ANGULAR DYNAMIC CONTENT -->
 				<h3 ng-view></h3>
@@ -41,7 +55,7 @@
   
 		<!-- ANGULAR CUSTOM -->
 		<!-- Angular main app module -->
-	 <!-- <script src="js/ng_app.js"></script>-->
+	  <!-- <script src="js/ng_app.js"></script>-->
 		<!-- services -->
 		<!--<script src="js/services/ng_service.js"></script>-->
 		<!--<script src="js/services/constant_service.js"></script>-->
