@@ -1,3 +1,3 @@
 module.exports = function($scope) {
-	$scope.message = 'Two birds killed with one stone 1!'
+	$scope.message = 'welcome to MEAN stack based on es6 !'
 }

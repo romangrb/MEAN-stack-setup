@@ -26,7 +26,7 @@ LINUX
 
 7. Download projects
   
-  git clone ....
+  git clone https://github.com/romangrb/MEAN-stack-setup.git
 
 8. Install packeges to projects
 
