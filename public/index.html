@@ -1,68 +1,15 @@
 <!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>My App</title>
+	<script src="/js/main.js"></script>
 
-<html>
-	
-	<head>
-		
-		<base href="/">
-		
-		<meta charset="UTF-8">
-	
-		<title> Welcome to MEAN stack </title>
-	
-		<!--Import materialize.css-->
-		<link type="text/css" rel="stylesheet" href="vendor/bower_components/Materialize/dist/css/materialize.min.css"  media="screen,projection"/>
-		<!-- CSS  custom styles after style liberies -->
-		<link rel="stylesheet" href="css/style.css">
-		
-		<!--Let browser know website is optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		
-		<!-- JS -->
-		<script src="vendor/bower_components/traceur/traceur.min.js"></script>
-		<script src="vendor/bower_components/es6-shim/es6-shim.min.js"></script>
-		<script src="vendor/bower_components/es6-module-loader/dist/es6-module-loader-dev.js"></script>
-		
-		<script src="vendor/bower_components/angular/angular.min.js"></script>
-		<script src="vendor/bower_components/angular-route/angular-route.min.js"></script>
-    	<script src="vendor/bower_components/angular-animate/angular-animate.min.js"></script>
-
-	 	<!--Import jQuery before materialize.js-->
-	    <script type="text/javascript" src="vendor/bower_components/jquery/dist/jquery.min.js"></script>
-	    <script type="text/javascript" src="vendor/bower_components/Materialize/dist/js/materialize.min.js"></script>
-	
-	</head>
-	
-	<body>
-		<noscript>
-	    <div class="u-padding-Am deprecation-warning">
-		      <h1> Please enable Javascript </h1>
-		      <p>GoCardless requires your browser to have Javascript enabled.
-		      <a href="http://enable-javascript.com" target="_blank">Learn more</a></p>
-	    </div>
-    </noscript>
-    
-    <!--<script src="/loader.config.js"></script>
-	  <script>
-	    System.baseURL = '/';
-	    System.import('app/bootstrap');
-	  </script>-->
-    
-	  <section>
-			  <!-- ANGULAR DYNAMIC CONTENT -->
-				<h3 ng-view>HELLO</h3>
-  	</section>
-  
-		<!-- ANGULAR CUSTOM -->
-		<!-- Angular main app module -->
-	  <!-- <script src="js/ng_app.js"></script>-->
-		<!-- services -->
-		<!--<script src="js/services/ng_service.js"></script>-->
-		<!--<script src="js/services/constant_service.js"></script>-->
-		<!-- models -->
-		<!-- controllers -->
-		<!--<script src="js/controllers/ng_ctrl.js"></script>-->
-	
-	</body>
-	
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div ng-controller="MainController">
+		<h1>{{ message }}</h1>
+	</div>
+</body>
 </html>
