@@ -1,20 +1,22 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 require('angular')
+
 var GreetCtrl = require('./controllers/greet_ctrl')
 
-var app = angular.module('app', [])
-app.controller('GreetCtrl', ['$scope', GreetCtrl])
-
-/* recommended */
-/*import { greet_ctrl } from './controllers/greet_ctrl';
-
 angular
-    .module('app')
-    .controller('greet_ctrl', greet_ctrl);*/
+    .module('app', [])
+    .controller('GreetCtrl', GreetCtrl)
+
 },{"./controllers/greet_ctrl":2,"angular":4}],2:[function(require,module,exports){
-module.exports = function($scope) {
-	$scope.message = 'welcome to MEAN stack based on es6 !'
+class GreetCtrl {
+  
+  constructor() {
+    this.message = 'welcome to MEAN stack based on es6 !'
+  }
+  
 }
+
+module.exports = GreetCtrl;
 },{}],3:[function(require,module,exports){
 /**
  * @license AngularJS v1.5.5

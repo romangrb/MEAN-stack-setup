@@ -1,3 +1,9 @@
-module.exports = function($scope) {
-	$scope.message = 'welcome to MEAN stack based on es6 !'
+class GreetCtrl {
+  
+  constructor() {
+    this.message = 'welcome to MEAN stack based on es6 !'
+  }
+  
 }
+
+module.exports = GreetCtrl;
