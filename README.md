@@ -1,6 +1,6 @@
-LINUX
+  LINUX
 
-1. Check your OS bits
+1. Check your OS bit
 
   You can also use the “file” command with a special argument (“/sbin/init”) to find out whether your system is 32-bit or 64-bit.
 
@@ -16,8 +16,12 @@ LINUX
 
   nvm ls-remote
 
-4. Installing
+4. Installing (reference to your OS)[]
+  
+shows all avaible versions on nodejs
+  nvm ls-remote node
 
+install 
   nvm install v.6.***
 
 5. Check nodejs version and location
@@ -38,13 +42,13 @@ LINUX
   
   also it shows you ipAddress & port to preview, you can change it in gulpfile in line gulp.task('connect'....
 
-style is refering to 
+styleguide for angular1 es6 is refering to 
 
 https://github.com/toddmotto/angular-styleguide
   and 
 https://github.com/rwwagner90/angular-styleguide-es6
 
-bouth of tham is extending from John Papa styleguide
+bouth of them is extending from John Papa styleguide
 
 10. Configure database
 
@@ -60,7 +64,8 @@ bouth of tham is extending from John Papa styleguide
     - mongo
     - use mongodb         (use collection [name])
     - db.mongodb.find()   (must show all imported collections)
-  export database (for example backup)
+    
+  export database
   
   run mongo service (not close this service):
   - mongod
