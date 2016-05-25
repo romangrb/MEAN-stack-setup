@@ -1,5 +1,12 @@
 require('angular')
-var MainController = require('./controllers/MainController')
+var greet_ctrl = require('./controllers/greet_ctrl')
 
 var app = angular.module('app', [])
-app.controller('MainController', ['$scope', MainController])
+app.controller('greet_ctrl', ['$scope', greet_ctrl])
+
+/* recommended */
+/*import { greet_ctrl } from './controllers/greet_ctrl';
+
+angular
+    .module('app')
+    .controller('greet_ctrl', greet_ctrl);*/

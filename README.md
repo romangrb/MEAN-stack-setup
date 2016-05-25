@@ -38,33 +38,38 @@ LINUX
   
   also it shows you ipAddress & port to preview, you can change it in gulpfile in line gulp.task('connect'....
 
+style is refering to 
+
+https://github.com/toddmotto/angular-styleguide
+  and 
+https://github.com/rwwagner90/angular-styleguide-es6
+
+bouth of tham is extending from John Papa styleguide
+
+10. Configure database
+
+  import database
   
-
-
-Configure database
-
-import database
-
-run mongo service (not close this service):
+  run mongo service (not close this service):
+    - mongod
+  run mongo client (in another terminal):
+    - mongo
+  import database  :
+    - mongoimport --db mongodb  --file mongodb.json 
+  check collection :
+    - mongo
+    - use mongodb         (use collection [name])
+    - db.mongodb.find()   (must show all imported collections)
+  export database (for example backup)
+  
+  run mongo service (not close this service):
   - mongod
-run mongo client (in another terminal):
-  - mongo
-import database  :
-  - mongoimport --db mongodb  --file mongodb.json 
-check collection :
-  - mongo
-  - use mongodb         (use collection [name])
-  - db.mongodb.find()   (must show all imported collections)
-export database (for example backup)
-
-run mongo service (not close this service):
-- mongod
-run mongo client (in another terminal):
-- mongo 
-show list of databases
-- show dbs 
-quit to bash
-- press ctrl+C
-export to file system
-- mongoexport --db databaseName --collection collectionNaame --out fileName.json
-npm install -g browserify npm install babelify browserify -d -e app.js -o bundle.js -t [ babelify --modules common]`
+  run mongo client (in another terminal):
+  - mongo 
+  show list of databases
+  - show dbs 
+  quit to bash
+  - press ctrl+C
+  export to file system
+  - mongoexport --db databaseName --collection collectionNaame --out fileName.json
+  npm install -g browserify npm install babelify browserify -d -e app.js -o bundle.js -t [ babelify --modules common]`
