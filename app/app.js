@@ -1,7 +1,7 @@
 
-require('angular')
+require("angular")
 
-var GreetCtrl = require('./controllers/greet_ctrl')
+import GreetCtrl from './controllers/greet_ctrl'
 
 angular
     .module('app', [])

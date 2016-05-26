@@ -6,4 +6,4 @@ class GreetCtrl {
   
 }
 
-module.exports = GreetCtrl 
+export default GreetCtrl
