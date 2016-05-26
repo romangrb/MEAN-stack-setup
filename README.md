@@ -40,15 +40,17 @@
 
   gulp
   
-  also it shows you ipAddress & port to preview, you can change it in gulpfile in line gulp.task('connect'....
+  it also shows you ipAddress & port to preview, 
+  you can change it in gulpfile in line gulp.task('connect'....
 
-styleguide for angular1 es6 is refering to 
+  this styleguide for angular1 es6 is refering to 
 
-https://github.com/toddmotto/angular-styleguide
-  and 
-https://github.com/rwwagner90/angular-styleguide-es6
+  https://github.com/toddmotto/angular-styleguide
+  https://github.com/rwwagner90/angular-styleguide-es6
 
-bouth of them is extending from John Papa styleguide
+  both of them is extending from John Papa styleguide
+  
+  https://github.com/johnpapa/angular-styleguide
 
 10. Configure database
 
