@@ -16,12 +16,12 @@
 
   nvm ls-remote
 
-4. Installing (reference to your OS)[]
-  
-shows all avaible versions on nodejs
+4. Installing (reference to your OS)
+
+  shows all avaible versions on nodejs
   nvm ls-remote node
 
-install 
+  install 
   nvm install v.6.***
 
 5. Check nodejs version and location
@@ -29,7 +29,7 @@ install
   node -v which node js
 
 7. Download projects
-  
+
   git clone https://github.com/romangrb/MEAN-stack-setup.git
 
 8. Install packeges to projects
@@ -68,13 +68,13 @@ bouth of them is extending from John Papa styleguide
   export database
   
   run mongo service (not close this service):
-  - mongod
+    - mongod
   run mongo client (in another terminal):
-  - mongo 
+    - mongo 
   show list of databases
-  - show dbs 
+    - show dbs 
   quit to bash
-  - press ctrl+C
+    - press ctrl+C
   export to file system
-  - mongoexport --db databaseName --collection collectionNaame --out fileName.json
+    - mongoexport --db databaseName --collection collectionNaame --out fileName.json
   npm install -g browserify npm install babelify browserify -d -e app.js -o bundle.js -t [ babelify --modules common]`
